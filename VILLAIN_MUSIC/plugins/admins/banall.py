@@ -2,7 +2,7 @@ from ASTA_MUSIC import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from ASTA_MUSIC.utils.VILLAIN_ban import admin_filter
+from ASTA_MUSIC.utils.ASTA_ban import admin_filter
 from ASTA_MUSIC.misc import SUDOERS
 
 BOT_ID = app.me.id  # Corrected this line
