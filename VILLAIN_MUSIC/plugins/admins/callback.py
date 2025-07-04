@@ -3,10 +3,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from VILLAIN_MUSIC import YouTube, app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import SUDOERS, db
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import YouTube, app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import SUDOERS, db
+from ASTA_MUSIC.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,17 +17,17 @@ from VILLAIN_MUSIC.utils.database import (
     music_on,
     set_loop,
 )
-from VILLAIN_MUSIC.utils.decorators.language import languageCB
-from VILLAIN_MUSIC.utils.formatters import seconds_to_min
-from VILLAIN_MUSIC.utils.inline import (
+from ASTA_MUSIC.utils.decorators.language import languageCB
+from ASTA_MUSIC.utils.formatters import seconds_to_min
+from ASTA_MUSIC.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
 )
-from VILLAIN_MUSIC.utils.stream.autoclear import auto_clean
-from VILLAIN_MUSIC.utils.thumbnails import get_thumb
+from ASTA_MUSIC.utils.stream.autoclear import auto_clean
+from ASTA_MUSIC.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -226,7 +226,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await VILLAIN.skip_stream(chat_id, link, video=status, image=image)
+                await ASTA.skip_stream(chat_id, link, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = telegram_markup(_, chat_id)
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await VILLAIN.skip_stream(chat_id, videoid, video=status)
+                await ASTA.skip_stream(chat_id, videoid, video=status)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = telegram_markup(_, chat_id)
@@ -314,7 +314,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await VILLAIN.skip_stream(chat_id, queued, video=status, image=image)
+                await ASTA.skip_stream(chat_id, queued, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
