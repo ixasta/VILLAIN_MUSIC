@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
