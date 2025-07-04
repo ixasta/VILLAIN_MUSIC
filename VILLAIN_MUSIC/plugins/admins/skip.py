@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from VILLAIN_MUSIC import YouTube, app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils.database import get_loop
-from VILLAIN_MUSIC.utils.decorators import AdminRightsCheck
-from VILLAIN_MUSIC.utils.inline import close_markup, stream_markup, telegram_markup
-from VILLAIN_MUSIC.utils.stream.autoclear import auto_clean
-from VILLAIN_MUSIC.utils.thumbnails import get_thumb
+from ASTA_MUSIC import YouTube, app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils.database import get_loop
+from ASTA_MUSIC.utils.decorators import AdminRightsCheck
+from ASTA_MUSIC.utils.inline import close_markup, stream_markup, telegram_markup
+from ASTA_MUSIC.utils.stream.autoclear import auto_clean
+from ASTA_MUSIC.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -77,7 +77,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await VILLAIN.stop_stream(chat_id)
+                    return await ASTA.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -88,7 +88,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await VILLAIN.stop_stream(chat_id)
+                return await ASTA.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -113,7 +113,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await VILLAIN.skip_stream(chat_id, link, video=status, image=image)
+            await ASTA.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = telegram_markup(_, chat_id)
@@ -174,7 +174,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await VILLAIN.skip_stream(chat_id, videoid, video=status)
+            await ASTA.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = telegram_markup(_, chat_id)
