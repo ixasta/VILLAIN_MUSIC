@@ -3,10 +3,10 @@ from pyrogram.types import Message
 import html
 import re
 from pyrogram.types import InlineKeyboardMarkup
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.mongo.notesdb import GetNote
+from ASTA_MUSIC import app
+from ASTA_MUSIC.mongo.notesdb import GetNote
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from VILLAIN_MUSIC.utils.msg_types import button_markdown_parser
+from ASTA_MUSIC.utils.msg_types import button_markdown_parser
 
 class NoteTypeMap(Enum):
     text = auto()
