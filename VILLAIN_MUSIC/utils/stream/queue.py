@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils.formatters import check_duration, seconds_to_min
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
