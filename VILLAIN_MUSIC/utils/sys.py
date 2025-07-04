@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from VILLAIN_MUSIC.misc import _boot_
-from VILLAIN_MUSIC.utils.formatters import get_readable_time
+from ASTA_MUSIC.misc import _boot_
+from ASTA_MUSIC.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
