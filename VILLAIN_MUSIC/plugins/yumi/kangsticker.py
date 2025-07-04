@@ -13,17 +13,17 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 from config import BOT_USERNAME
-from VILLAIN_MUSIC.utils.errors import capture_err
+from ASTA_MUSIC.utils.errors import capture_err
 
-from VILLAIN_MUSIC.utils.files import (
+from ASTA_MUSIC.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
 
-from VILLAIN_MUSIC.utils.stickerset import (
+from ASTA_MUSIC.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
@@ -144,7 +144,7 @@ async def kang(client, message: Message):
                 stickerset = await create_sticker_set(
                     client,
                     message.from_user.id,
-                    f"{message.from_user.first_name[:32]}'s ᴘᴀᴄᴋ ʙʏ @radha_music_bot",
+                    f"{message.from_user.first_name[:32]}'s ᴘᴀᴄᴋ ʙʏ @laibaamusicbot",
                     packname,
                     [sticker],
                 )
