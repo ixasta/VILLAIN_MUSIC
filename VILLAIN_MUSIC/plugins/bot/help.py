@@ -1,15 +1,15 @@
 from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils import help_pannel
-from VILLAIN_MUSIC.utils.database import get_lang
-from VILLAIN_MUSIC.utils.decorators.language import LanguageStart, languageCB
-from VILLAIN_MUSIC.utils.inline.help import help_back_markup, private_help_panel
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils import help_pannel
+from ASTA_MUSIC.utils.database import get_lang
+from ASTA_MUSIC.utils.decorators.language import LanguageStart, languageCB
+from ASTA_MUSIC.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from VILLAIN_MUSIC.utils.stuffs.buttons import BUTTONS
-from VILLAIN_MUSIC.utils.stuffs.helper import Helper
+from ASTA_MUSIC.utils.stuffs.buttons import BUTTONS
+from ASTA_MUSIC.utils.stuffs.helper import Helper
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
