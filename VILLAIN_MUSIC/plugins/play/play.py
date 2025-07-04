@@ -6,23 +6,23 @@ from pyrogram.types import InlineKeyboardButton
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from VILLAIN_MUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.utils import seconds_to_min, time_to_seconds
-from VILLAIN_MUSIC.utils.channelplay import get_channeplayCB
-from VILLAIN_MUSIC.utils.decorators.language import languageCB
-from VILLAIN_MUSIC.utils.decorators.play import PlayWrapper
-from VILLAIN_MUSIC.utils.database import is_served_user
-from VILLAIN_MUSIC.utils.formatters import formats
-from VILLAIN_MUSIC.utils.inline import (
+from ASTA_MUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.utils import seconds_to_min, time_to_seconds
+from ASTA_MUSIC.utils.channelplay import get_channeplayCB
+from ASTA_MUSIC.utils.decorators.language import languageCB
+from ASTA_MUSIC.utils.decorators.play import PlayWrapper
+from ASTA_MUSIC.utils.database import is_served_user
+from ASTA_MUSIC.utils.formatters import formats
+from ASTA_MUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from VILLAIN_MUSIC.utils.logger import play_logs
-from VILLAIN_MUSIC.utils.stream.stream import stream
+from ASTA_MUSIC.utils.logger import play_logs
+from ASTA_MUSIC.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -505,8 +505,8 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("RAUSHANmousAdmin") & ~BANNED_USERS)
-async def RAUSHANmous_check(client, CallbackQuery):
+@app.on_callback_query(filters.regex("ASTAmousAdmin") & ~BANNED_USERS)
+async def ASTAmous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
