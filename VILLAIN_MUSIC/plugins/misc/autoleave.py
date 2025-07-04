@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.core.call import VILLAIN, autoend
-from VILLAIN_MUSIC.utils.database import get_client, is_active_chat, is_autoend
+from ASTA_MUSIC import app
+from ASTA_MUSIC.core.call import ASTA, autoend
+from ASTA_MUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from VILLAIN_MUSIC.core.userbot import assistants
+            from ASTA_MUSIC.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -26,8 +26,8 @@ async def auto_leave():
                         ]:
                             if (
                                 i.chat.id != config.LOGGER_ID
-                                and i.chat.id != -1001465277194
-                                and i.chat.id != -1002120144597
+                                and i.chat.id != -1002540470695
+                                and i.chat.id != -1002540470695
                             ):
                                 if left == 20:
                                     continue
@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await VILLAIN.stop_stream(chat_id)
+                    await ASTA.stop_stream(chat_id)
                 except:
                     continue
                 try:
