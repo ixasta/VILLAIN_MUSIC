@@ -1,9 +1,9 @@
 from pyrogram import filters 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.enums import ChatMembersFilter
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.database import connect_to_chat
-from VILLAIN_MUSIC.utils.decorators import AdminActual
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.database import connect_to_chat
+from ASTA_MUSIC.utils.decorators import AdminActual
 from config import BANNED_USERS
 
 
