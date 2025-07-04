@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import SUDOERS, db
-from VILLAIN_MUSIC.utils import AdminRightsCheck
-from VILLAIN_MUSIC.utils.database import is_active_chat, is_nonadmin_chat
-from VILLAIN_MUSIC.utils.decorators.language import languageCB
-from VILLAIN_MUSIC.utils.inline import close_markup, speed_markup
+from ASTA_MUSIC import app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import SUDOERS, db
+from ASTA_MUSIC.utils import AdminRightsCheck
+from ASTA_MUSIC.utils.database import is_active_chat, is_nonadmin_chat
+from ASTA_MUSIC.utils.decorators.language import languageCB
+from ASTA_MUSIC.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
