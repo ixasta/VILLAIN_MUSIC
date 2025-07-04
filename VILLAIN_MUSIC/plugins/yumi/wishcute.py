@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from VILLAIN_MUSIC import app 
+from ASTA_MUSIC import app 
 
 SUPPORT_CHAT = "PURVI_SUPPORT"
 
