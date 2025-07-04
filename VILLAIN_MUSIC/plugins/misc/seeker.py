@@ -1,7 +1,7 @@
 import asyncio
 
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils.database import get_active_chats, is_music_playing
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
