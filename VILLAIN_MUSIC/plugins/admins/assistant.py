@@ -6,7 +6,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from ASTA_MUSIC import app
-from ASTA_MUSIC.utils.VILLAIN_ban import admin_filter
+from ASTA_MUSIC.utils.ASTA_ban import admin_filter
 from ASTA_MUSIC.utils.database import get_assistant
 
 links = {}
