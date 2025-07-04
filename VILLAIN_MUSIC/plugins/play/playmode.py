@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from VILLAIN_MUSIC.utils.decorators import language
-from VILLAIN_MUSIC.utils.inline.settings import playmode_users_markup
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from ASTA_MUSIC.utils.decorators import language
+from ASTA_MUSIC.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
