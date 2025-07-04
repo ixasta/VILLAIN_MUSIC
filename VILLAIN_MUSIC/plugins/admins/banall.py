@@ -1,9 +1,9 @@
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from VILLAIN_MUSIC.utils.VILLAIN_ban import admin_filter
-from VILLAIN_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.VILLAIN_ban import admin_filter
+from ASTA_MUSIC.misc import SUDOERS
 
 BOT_ID = app.me.id  # Corrected this line
 
