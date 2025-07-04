@@ -11,7 +11,7 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 
 import datetime
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 
 
 
