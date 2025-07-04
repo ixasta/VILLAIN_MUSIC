@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import YouTube, app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils import AdminRightsCheck, seconds_to_min
-from VILLAIN_MUSIC.utils.inline import close_markup
+from ASTA_MUSIC import YouTube, app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils import AdminRightsCheck, seconds_to_min
+from ASTA_MUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
