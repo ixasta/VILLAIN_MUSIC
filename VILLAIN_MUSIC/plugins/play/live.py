@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from VILLAIN_MUSIC import YouTube, app
-from VILLAIN_MUSIC.utils.channelplay import get_channeplayCB
-from VILLAIN_MUSIC.utils.decorators.language import languageCB
-from VILLAIN_MUSIC.utils.stream.stream import stream
+from ASTA_MUSIC import YouTube, app
+from ASTA_MUSIC.utils.channelplay import get_channeplayCB
+from ASTA_MUSIC.utils.decorators.language import languageCB
+from ASTA_MUSIC.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
