@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import requests
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 
 # Function to chunk the repository info into smaller parts
 def chunk_string(text, chunk_size):
@@ -51,7 +51,7 @@ def get_all_repository_info(github_username):
 
 [
                                 InlineKeyboardButton(
-                                    "𝖩ᴏɪɴ 𝖳ᴇᴀᴍ 𝖯ᴜʀᴠɪ 𝖡ᴏᴛs",
-                                    url="t.me/purvi_support"
+                                    "𝖩ᴏɪɴ 𝖳ᴇᴀᴍ ⋏ 𝛅 𝛕 ⋏ 𝖡ᴏᴛs",
+                                    url="t.me/ixasta1"
                                 )
 ]
