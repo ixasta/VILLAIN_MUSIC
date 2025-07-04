@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from VILLAIN_MUSIC.core.mongo import mongodb
+from ASTA_MUSIC.core.mongo import mongodb
 
 from .logging import LOGGER
 
