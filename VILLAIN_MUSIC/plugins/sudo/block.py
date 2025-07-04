@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import add_gban_user, remove_gban_user
-from VILLAIN_MUSIC.utils.decorators.language import language
-from VILLAIN_MUSIC.utils.extraction import extract_user
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import add_gban_user, remove_gban_user
+from ASTA_MUSIC.utils.decorators.language import language
+from ASTA_MUSIC.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
