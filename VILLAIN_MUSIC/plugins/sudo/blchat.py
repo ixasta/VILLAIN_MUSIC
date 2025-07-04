@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from VILLAIN_MUSIC.utils.decorators.language import language
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from ASTA_MUSIC.utils.decorators.language import language
 from config import BANNED_USERS
 
 
