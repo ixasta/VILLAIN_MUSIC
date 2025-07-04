@@ -1,8 +1,8 @@
-from VILLAIN_MUSIC.core.bot import VILLAIN
-from VILLAIN_MUSIC.core.dir import dirr
-from VILLAIN_MUSIC.core.git import git
-from VILLAIN_MUSIC.core.userbot import Userbot
-from VILLAIN_MUSIC.misc import dbb, heroku
+from ASTA_MUSIC.core.bot import ASTA
+from ASTA_MUSIC.core.dir import dirr
+from ASTA_MUSIC.core.git import git
+from ASTA_MUSIC.core.userbot import Userbot
+from ASTA_MUSIC.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = VILLAIN()
+app = ASTA()
 api = SafoneAPI()
 userbot = Userbot()
 
