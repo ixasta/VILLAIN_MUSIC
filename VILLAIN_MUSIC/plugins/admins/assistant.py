@@ -1,13 +1,13 @@
 import asyncio
-from VILLAIN_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.misc import SUDOERS
 from pyrogram import filters
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.VILLAIN_ban import admin_filter
-from VILLAIN_MUSIC.utils.database import get_assistant
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.VILLAIN_ban import admin_filter
+from ASTA_MUSIC.utils.database import get_assistant
 
 links = {}
 
