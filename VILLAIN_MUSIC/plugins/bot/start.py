@@ -7,12 +7,12 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 import config
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import _boot_
-from VILLAIN_MUSIC.plugins.sudo.sudoers import sudoers_list
-from VILLAIN_MUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
-from VILLAIN_MUSIC.utils import bot_sys_stats
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import _boot_
+from ASTA_MUSIC.plugins.sudo.sudoers import sudoers_list
+from ASTA_MUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
+from ASTA_MUSIC.utils import bot_sys_stats
+from ASTA_MUSIC.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -20,9 +20,9 @@ from VILLAIN_MUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from VILLAIN_MUSIC.utils.decorators.language import LanguageStart
-from VILLAIN_MUSIC.utils.formatters import get_readable_time
-from VILLAIN_MUSIC.utils.inline import help_pannel, private_panel, start_panel
+from ASTA_MUSIC.utils.decorators.language import LanguageStart
+from ASTA_MUSIC.utils.formatters import get_readable_time
+from ASTA_MUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
