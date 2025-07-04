@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 from pyrogram.types import InputMediaVideo
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import add_sudo, remove_sudo
-from VILLAIN_MUSIC.utils.decorators.language import language
-from VILLAIN_MUSIC.utils.extraction import extract_user
-from VILLAIN_MUSIC.utils.inline import close_markup
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import add_sudo, remove_sudo
+from ASTA_MUSIC.utils.decorators.language import language
+from ASTA_MUSIC.utils.extraction import extract_user
+from ASTA_MUSIC.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
@@ -61,7 +61,7 @@ async def sudoers_list(client, message: Message):
 async def check_sudo_list(client, callback_query: CallbackQuery):
     keyboard = []
     if callback_query.from_user.id not in SUDOERS:
-        return await callback_query.answer(" ꪜ 𝛊 ɭ ɭ ᧘ 𝛊 𝛈 ᴋᴀ 𝗟ᴜɴᴅ 𝗟ᴇɢᴀ 😂 \n 𝗦ᴜᴅᴏʟɪsᴛ 𝗗ᴇᴋʜɴᴇ ᴀᴀʏᴀ ᴍᴄ 🤧🖕", show_alert=True)
+        return await callback_query.answer(" ⋏ 𝛅 𝛕 ⋏ ᴋᴀ 𝗟ᴜɴᴅ 𝗟ᴇɢᴀ 😂 \n 𝗦ᴜᴅᴏʟɪsᴛ 𝗗ᴇᴋʜɴᴇ ᴀᴀʏᴀ ᴍᴄ 🤧🖕", show_alert=True)
     else:
         user = await app.get_users(OWNER_ID)
 
