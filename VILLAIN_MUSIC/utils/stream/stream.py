@@ -6,20 +6,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from VILLAIN_MUSIC import Carbon, YouTube, app
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils.database import add_active_video_chat, is_active_chat
-from VILLAIN_MUSIC.utils.exceptions import AssistantErr
-from VILLAIN_MUSIC.utils.inline import (
+from ASTA_MUSIC import Carbon, YouTube, app
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils.database import add_active_video_chat, is_active_chat
+from ASTA_MUSIC.utils.exceptions import AssistantErr
+from ASTA_MUSIC.utils.inline import (
     aq_markup,
     close_markup,
     stream_markup,
     telegram_markup,
 )
-from VILLAIN_MUSIC.utils.pastebin import VILLAINBin
-from VILLAIN_MUSIC.utils.stream.queue import put_queue, put_queue_index
-from VILLAIN_MUSIC.utils.thumbnails import get_thumb
+from ASTA_MUSIC.utils.pastebin import ASTABin
+from ASTA_MUSIC.utils.stream.queue import put_queue, put_queue_index
+from ASTA_MUSIC.utils.thumbnails import get_thumb
 
 
 async def stream(
@@ -38,7 +38,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await VILLAIN.force_stop_stream(chat_id)
+        await ASTA.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -128,7 +128,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await VILLAINBin(msg)
+            link = await ASTABin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -182,7 +182,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await VILLAIN.join_call(
+            await ASTA.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -242,7 +242,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await VILLAIN.join_call(chat_id, original_chat_id, file_path, video=None)
+            await ASTA.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -350,7 +350,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await RAUSHAN.join_call(
+            await ASTA.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -408,7 +408,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await RAUSHAN.join_call(
+            await ASTA.join_call(
                 chat_id,
                 original_chat_id,
                 link,
