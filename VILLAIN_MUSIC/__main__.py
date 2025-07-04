@@ -4,11 +4,11 @@ import importlib
 from pyrogram import idle
 
 import config
-from VILLAIN_MUSIC import LOGGER, app, userbot
-from VILLAIN_MUSIC.core.call import VILLAIN
-from VILLAIN_MUSIC.misc import sudo
-from VILLAIN_MUSIC.plugins import ALL_MODULES
-from VILLAIN_MUSIC.utils.database import get_banned_users, get_gbanned
+from ASTA_MUSIC import LOGGER, app, userbot
+from ASTA_MUSIC.core.call import ASTA
+from ASTA_MUSIC.misc import sudo
+from ASTA_MUSIC.plugins import ALL_MODULES
+from ASTA_MUSIC.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -36,16 +36,16 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("VILLAIN_MUSIC.plugins" + all_module)
-    LOGGER("VILLAIN_MUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+        importlib.import_module("ASTA_MUSIC.plugins" + all_module)
+    LOGGER("ASTA_MUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
     await VILLAIN.start()
     await VILLAIN.decorators()
-    LOGGER("VILLAIN_MUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗩𝗜𝗟𝗟𝗔𝗜𝗡♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("ASTA_MUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗦𝗧𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("VILLAIN_MUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗩𝗜𝗟𝗟𝗔𝗜𝗡♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("ASTA_MUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗦𝗧𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
 
 
 if __name__ == "__main__":
