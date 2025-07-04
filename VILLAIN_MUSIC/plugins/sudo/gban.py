@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils import get_readable_time
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils import get_readable_time
+from ASTA_MUSIC.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
