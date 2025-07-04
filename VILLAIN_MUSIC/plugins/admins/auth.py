@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils import extract_user, int_to_alpha
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils import extract_user, int_to_alpha
+from ASTA_MUSIC.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from VILLAIN_MUSIC.utils.decorators import AdminActual, language
-from VILLAIN_MUSIC.utils.inline import close_markup
+from ASTA_MUSIC.utils.decorators import AdminActual, language
+from ASTA_MUSIC.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
