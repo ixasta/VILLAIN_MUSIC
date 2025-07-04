@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import db
-from VILLAIN_MUSIC.utils.decorators import AdminRightsCheck
-from VILLAIN_MUSIC.utils.inline import close_markup
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import db
+from ASTA_MUSIC.utils.decorators import AdminRightsCheck
+from ASTA_MUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
