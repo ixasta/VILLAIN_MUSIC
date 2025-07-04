@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.database import set_cmode
-from VILLAIN_MUSIC.utils.decorators.admins import AdminActual
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.database import set_cmode
+from ASTA_MUSIC.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
