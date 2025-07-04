@@ -16,15 +16,15 @@ from pyrogram.types import (
 from io import BytesIO
 from pyrogram import filters
 import config
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import HAPP, SUDOERS, XCB
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import HAPP, SUDOERS, XCB
+from ASTA_MUSIC.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from VILLAIN_MUSIC.utils.decorators.language import language
-from VILLAIN_MUSIC.utils.pastebin import VILLAINBin
+from ASTA_MUSIC.utils.decorators.language import language
+from ASTA_MUSIC.utils.pastebin import ASTABin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -85,7 +85,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>ᴀ ɴᴇᴡ ᴜᴩᴅᴀᴛᴇ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ʙᴏᴛ !</b>\n\n➣ ᴩᴜsʜɪɴɢ ᴜᴩᴅᴀᴛᴇs ɴᴏᴡ\n\n<b><u>ᴜᴩᴅᴀᴛᴇs:</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await RAUSHANBin(updates)
+        url = await ASTABin(updates)
         nrs = await response.edit(
             f"<b>ᴀ ɴᴇᴡ ᴜᴩᴅᴀᴛᴇ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ʙᴏᴛ !</b>\n\n➣ ᴩᴜsʜɪɴɢ ᴜᴩᴅᴀᴛᴇs ɴᴏᴡ\n\n<u><b>ᴜᴩᴅᴀᴛᴇs :</b></u>\n\n<a href={url}>ᴄʜᴇᴄᴋ ᴜᴩᴅᴀᴛᴇs</a>"
         )
