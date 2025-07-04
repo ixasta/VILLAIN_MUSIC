@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import qrcode
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 from PIL import Image
 import io
 
