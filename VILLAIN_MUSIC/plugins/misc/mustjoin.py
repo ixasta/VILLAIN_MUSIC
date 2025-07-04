@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 
 #--------------------------
 
-MUST_JOIN = "iamvillain77"
+MUST_JOIN = "ixasta1"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
@@ -16,7 +16,7 @@ async def must_join_channel(app: Client, msg: Message):
             await app.get_chat_member(MUST_JOIN, msg.from_user.id)
         except UserNotParticipant:
             if MUST_JOIN.isalpha():
-                link = "https://t.me/iamvillain77" + MUST_JOIN
+                link = "https://t.me/ixasta1" + MUST_JOIN
             else:
                 chat_info = await app.get_chat(MUST_JOIN)
                 link = chat_info.invite_link
@@ -29,7 +29,7 @@ async def must_join_channel(app: Client, msg: Message):
                                 InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/oldskoolgc"),
                             ],
                             [
-                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/iamvillain77"),
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/ixasta1"),
                             ]
                         ]
                     )
@@ -38,4 +38,4 @@ async def must_join_channel(app: Client, msg: Message):
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"๏ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴍᴜsᴛ_ᴊᴏɪɴ ᴄʜᴀᴛ ๏: {MUST_JOIN} !")
+        print(f"๏ ᴘʀᴏᴍᴏᴛᴇ ⅘ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴍᴜsᴛ_ᴊᴏɪɴ ᴄʜᴀᴛ ๏: {MUST_JOIN} !")
