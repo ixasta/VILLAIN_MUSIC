@@ -10,8 +10,8 @@ from pyrogram.types import (
     InputMediaVideo,
 )
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -27,15 +27,15 @@ from VILLAIN_MUSIC.utils.database import (
     skip_off,
     skip_on,
 )
-from VILLAIN_MUSIC.utils.decorators.admins import ActualAdminCB
-from VILLAIN_MUSIC.utils.decorators.language import language, languageCB
-from VILLAIN_MUSIC.utils.inline.settings import (
+from ASTA_MUSIC.utils.decorators.admins import ActualAdminCB
+from ASTA_MUSIC.utils.decorators.language import language, languageCB
+from ASTA_MUSIC.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from VILLAIN_MUSIC.utils.inline.start import private_panel
+from ASTA_MUSIC.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, START_IMG_URL
 
 
