@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import add_off, add_on
-from VILLAIN_MUSIC.utils.decorators.language import language
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import add_off, add_on
+from ASTA_MUSIC.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
