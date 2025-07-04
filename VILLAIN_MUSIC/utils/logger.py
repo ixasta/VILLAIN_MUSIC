@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.database import is_on_off
+from ASTA_MUSIC import app
+from ASTA_MUSIC.utils.database import is_on_off
 from config import LOGGER_ID
 
 
