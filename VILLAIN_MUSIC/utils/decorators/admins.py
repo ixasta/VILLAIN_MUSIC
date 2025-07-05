@@ -3,9 +3,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from dotenv import load_dotenv
 
 load_dotenv()
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS, db
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS, db
+from ASTA_MUSIC.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -48,7 +48,7 @@ def AdminRightsCheck(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="VILLAINmousAdmin",
+                            callback_data="ASTAmousAdmin",
                         ),
                     ]
                 ]
@@ -144,7 +144,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="VILLAINmousAdmin",
+                            callback_data="ASTAmousAdmin",
                         ),
                     ]
                 ]
