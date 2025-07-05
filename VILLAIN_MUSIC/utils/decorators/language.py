@@ -1,5 +1,5 @@
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import get_lang, is_maintenance
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import get_lang, is_maintenance
 from strings import get_string
 
 
