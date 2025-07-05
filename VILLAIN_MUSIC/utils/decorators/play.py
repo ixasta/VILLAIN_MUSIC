@@ -9,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from VILLAIN_MUSIC import YouTube, app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import YouTube, app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from VILLAIN_MUSIC.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from VILLAIN_MUSIC.utils.inline import botplaylist_markup
+from ASTA_MUSIC.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
