@@ -8,9 +8,9 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.misc import SUDOERS
-from VILLAIN_MUSIC.utils.database import (
+from ASTA_MUSIC import app
+from ASTA_MUSIC.misc import SUDOERS
+from ASTA_MUSIC.utils.database import (
     get_assistant,
     get_lang,
     is_active_chat,
