@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from VILLAIN_MUSIC import app
+from ASTA_MUSIC import app
 
 
 def start_panel(_):
